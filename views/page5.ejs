@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>contact us</title>
+
+</head>
+<body>
+    
+    
+    
+    <section class="headers5">
+        <div class="contact">
+            <div>
+                <%- include("particles/nav.ejs") %> 
+
+                <h1>Contact</h1>
+                <h2>Contacting your store</h2>
+                <p> If there any issues please contact us with the methods below:</p>   
+                
+                <ol id="pop">
+                    <li>Email:nationrapnation@gmail.com</li>
+                    <li>Tel no.:01908282882</li>
+                </ol>
+                <p>also if any customer wants to leave a comment please do so below</p>
+                  
+                
+            </div>
+        </div>
+    </section>
+    <section id="app">
+        <form method="post"  id="frmxample">
+            <label for="txtname">username:</label><input id="txtname"  name="name">
+            <label for="txtemail">email:</label><input type="email" id="txtemail" name="email">
+            
+            <label for="textarea">comment:</label><input id="textarea" name="comments">
+            
+            
+            <button id="btnexample">click here</button>
+            <p id="result"></p>
+        
+        <script src="scripts/formexample.js"></script>
+        </form>
+        <div class="container">
+            <div class="row">
+            <div class="col-6">
+                <div class="comment">
+            <p v-for="items in item" v-text="items"></p>
+                </div><!--End Comment-->
+                </div><!--End col -->
+                </div><!-- End row -->
+            <div class="row">
+            <div class="col-6">
+            <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+            </div><!-- End col -->
+            </div><!--End Row -->
+        </div><!--End Container -->
+        </section><!-- end App -->
+
+<!-- Vue JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+<!-- jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="scripts/commentsection.js"></script>
+
+    
+</body>
+</html>

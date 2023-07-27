@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+   
+    <header>
+        <h1>Welcome</h1>
+    </header>
+
+    <%- include("particles/nav.ejs") %>
+    
+    <div  id="title">
+        <h2>This is a random page title</h2>
+    </div>
+    
+    <main>
+        <div id="generalcontent">
+            
+            <% if(err){ %>
+                <p>Sorry, there was an error connecting to the database</p>
+            <% } else { %>
+                <p>Location was added!</p>
+            <% } %>
+
+        </div>  
+    
+    </main>
+   
+   
+   
+   
+   
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/formexample.js"></script>
+</body>
+</html>

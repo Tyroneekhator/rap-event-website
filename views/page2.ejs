@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Line up</title>
+</head>
+<body class="page2">
+    <section class="course">
+        <h1>Rappers available</h1>
+        <p>Please expect the following artistis to show up to the event.</p>
+        
+     <%- include("particles/nav.ejs") %> 
+            
+        <div class="slidershow middle">
+
+            <div class="slides">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <input type="radio" name="r" id="r4">
+                <input type="radio" name="r" id="r5">
+
+
+                <div class="slide s1">
+                    <img src="/images/sexydoja.jpg" alt="doja cat">
+                </div>
+                <div class="slide">
+                    <img src="/images/darkem.jpg" alt="eminem">
+                </div>
+                <div class="slide">
+                    <img src="/images/kanyewest.jpg" alt="kanye west">
+                </div>
+                <div class="slide">
+                    <img src="/images/jazz.jpg" alt="jay-z">
+                </div>
+                <div class="slide">
+                    <img src="/images/lil.jpg" alt="lil wayne">
+                </div>
+                
+            </div>
+
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+            </div>
+        </div>
+        
+    </section>
+
+</body>
+</html>
+
+
+
+
+
+ 
