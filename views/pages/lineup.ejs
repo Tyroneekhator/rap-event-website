@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RapNation Lineup</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="theme-dark">
+
+    <%- include("../partials/navbar") %>
+
+    <header class="page-hero page-hero-lineup">
+        <div class="page-hero-overlay"></div>
+        <div class="container page-hero-content">
+            <p class="section-kicker">2026 Artists</p>
+            <h1>Festival Lineup</h1>
+            <p>
+                Explore the names bringing the energy, sound, and unforgettable moments to RapNation.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section-dark">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Headliner</p>
+                    <h2>Main Stage Spotlight</h2>
+                    <p>The artist everyone will be waiting for.</p>
+                </div>
+
+                <article class="headliner-card">
+                    <div class="headliner-image">
+                        <img src="/images/kanyewest.jpg" alt="Headliner">
+                    </div>
+                    <div class="headliner-copy">
+                        <span class="tag">Headliner</span>
+                        <h3>Kanye West</h3>
+                        <p>
+                            A major headline performance with a stadium-level set, iconic records,
+                            and a huge festival moment.
+                        </p>
+                        <div class="headliner-meta">
+                            <span class="meta-pill">Main Stage</span>
+                            <span class="meta-pill">Saturday · 9:30 PM</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-surface">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Featured Artists</p>
+                    <h2>Who’s Performing</h2>
+                    <p>Browse the artists across rap, hip-hop, and live performance culture.</p>
+                </div>
+
+                <div class="artist-grid">
+                    <article class="artist-card">
+                        <img src="/images/sexydoja.jpg" alt="Doja Cat">
+                        <div class="artist-overlay"></div>
+                        <div class="artist-info">
+                            <span class="tag">Hip-Hop</span>
+                            <h3>Doja Cat</h3>
+                        </div>
+                    </article>
+
+                    <article class="artist-card">
+                        <img src="/images/darkem.jpg" alt="Eminem">
+                        <div class="artist-overlay"></div>
+                        <div class="artist-info">
+                            <span class="tag">Rap</span>
+                            <h3>Eminem</h3>
+                        </div>
+                    </article>
+
+                    <article class="artist-card">
+                        <img src="/images/jazz.jpg" alt="Jay-Z">
+                        <div class="artist-overlay"></div>
+                        <div class="artist-info">
+                            <span class="tag">Legend</span>
+                            <h3>Jay-Z</h3>
+                        </div>
+                    </article>
+
+                    <article class="artist-card">
+                        <img src="/images/lil.jpg" alt="Lil Wayne">
+                        <div class="artist-overlay"></div>
+                        <div class="artist-info">
+                            <span class="tag">Special Guest</span>
+                            <h3>Lil Wayne</h3>
+                        </div>
+                    </article>
+
+                    <article class="artist-card">
+                        <img src="/images/kanyewest.jpg" alt="Kanye West">
+                        <div class="artist-overlay"></div>
+                        <div class="artist-info">
+                            <span class="tag">Headliner</span>
+                            <h3>Kanye West</h3>
+                        </div>
+                    </article>
+
+                    <article class="artist-card">
+                        <img src="/images/sexydoja.jpg" alt="Festival performer">
+                        <div class="artist-overlay"></div>
+                        <div class="artist-info">
+                            <span class="tag">Festival Set</span>
+                            <h3>Doja Cat</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark">
+            <div class="container cta-banner">
+                <div>
+                    <p class="section-kicker">Next Step</p>
+                    <h2>Want to Plan Your Festival Weekend?</h2>
+                    <p>Check the stages and schedule to see where the biggest moments will happen.</p>
+                </div>
+
+                <div class="cta-actions">
+                    <a href="/stages" class="btn btn-primary">See Stages</a>
+                    <a href="https://www.ticketmaster.co.uk/" class="btn btn-secondary">Get Tickets</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include("../partials/footer") %>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RapNation Comments</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="theme-dark">
+
+    <%- include("../partials/navbar") %>
+
+    <header class="page-hero page-hero-comments">
+        <div class="page-hero-overlay"></div>
+        <div class="container page-hero-content">
+            <p class="section-kicker">Community</p>
+            <h1>Festival Comments</h1>
+            <p>
+                See what people are saying about RapNation and join the conversation.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section-dark">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Audience Voices</p>
+                    <h2>Community Feedback</h2>
+                    <p>Real comments from people interested in the festival experience.</p>
+                </div>
+
+                <% if (comments && comments.length > 0) { %>
+                    <div class="comments-grid">
+                        <% comments.forEach((row) => { %>
+                            <article class="comment-card">
+                                <div class="comment-avatar">
+                                    <%= row.username ? row.username.charAt(0).toUpperCase() : "R" %>
+                                </div>
+
+                                <div class="comment-body">
+                                    <div class="comment-top">
+                                        <h3><%= row.username %></h3>
+                                        <p><%= row.email %></p>
+                                    </div>
+
+                                    <div class="comment-text">
+                                        <p><%= row.comment %></p>
+                                    </div>
+                                </div>
+                            </article>
+                        <% }) %>
+                    </div>
+                <% } else { %>
+                    <div class="empty-state">
+                        <h3>No comments yet</h3>
+                        <p>Be the first to share your thoughts about RapNation.</p>
+                        <a href="/contact" class="btn btn-primary">Leave a Comment</a>
+                    </div>
+                <% } %>
+            </div>
+        </section>
+    </main>
+
+    <%- include("../partials/footer") %>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact RapNation</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="theme-dark">
+
+    <%- include("../partials/navbar") %>
+
+    <header class="page-hero page-hero-contact">
+        <div class="page-hero-overlay"></div>
+        <div class="container page-hero-content">
+            <p class="section-kicker">Support</p>
+            <h1>Contact RapNation</h1>
+            <p>
+                Reach out for festival questions, support, or leave your comment below.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section-dark">
+            <div class="container contact-layout">
+                <div class="contact-info-panel">
+                    <p class="section-kicker">Get in Touch</p>
+                    <h2>Need Help Before the Festival?</h2>
+                    <p class="contact-lead">
+                        Our team is here to help with tickets, event details, support questions,
+                        and general feedback.
+                    </p>
+
+                    <div class="info-card">
+                        <h3>Email</h3>
+                        <p>nationrapnation@gmail.com</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Phone</h3>
+                        <p>01908282882</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Need More?</h3>
+                        <p>Check the visitor guide or see what other people are saying.</p>
+                        <div class="info-actions">
+                            <a href="/Advice" class="btn btn-secondary">Visitor Guide</a>
+                            <a href="/comments" class="btn btn-secondary">View Comments</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-panel">
+                    <p class="section-kicker">Leave a Comment</p>
+                    <h2>Send Us a Message</h2>
+
+                    <form method="post" action="/contact" class="contact-form">
+                        <div class="form-group">
+                            <label for="txtname">Username</label>
+                            <input id="txtname" name="username" type="text" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtemail">Email</label>
+                            <input id="txtemail" name="email" type="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtcomment">Comment</label>
+                            <textarea id="txtcomment" name="comment" rows="6" required></textarea>
+                        </div>
+
+                        <button class="btn btn-primary form-submit" type="submit">Send Comment</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include("../partials/footer") %>
+
+</body>
+</html>
