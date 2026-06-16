@@ -6,6 +6,10 @@ This project has been fully upgraded with a **modern UI/UX redesign**, improved 
 
 ---
 
+## live demo
+
+[live demonstration of the website](https://drive.google.com/file/d/1Bb4gb6WFsHReFk_CTuQANA-ql46pHwTs/view?usp=sharing)
+
 ## 🚀 Features
 
 ### 🎨 Frontend (UI/UX)
