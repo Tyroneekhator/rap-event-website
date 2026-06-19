@@ -14,6 +14,7 @@ db.connect((err) => {
     console.error("MySQL connection failed:", err.message);
     return;
   }
+
   console.log("MySQL is connected!");
 });
 
